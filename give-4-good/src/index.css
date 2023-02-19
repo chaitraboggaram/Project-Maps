@@ -60,13 +60,14 @@ a:hover, button:hover {
 } 
 
 nav {
-  /* background: #fff; */
-  background: transparent;
+  background: #fff;
+  /* background: transparent; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 4rem;
   /* box-shadow: 2px 3px 2px #f1f1f1; */
+  /* border: 2px solid black; */
 
   /* make navbar sticky */
   position: sticky;
@@ -96,6 +97,7 @@ ul {
 
 .nav-link {
   font-weight: var(--bold-font);
+  font-size: 23px;
 }
 
 .hero .title {
@@ -131,7 +133,8 @@ ul {
   padding: 50px 0px 0px;
   right: 0; bottom: 0; left: 0;
   width: 100vw;
-  height: calc(100vh - var(--nav-height));
+  /* height: calc(100vh - var(--nav-height)); */
+  height: calc(100vh);
   /* background-image: url('./images/helping-hand.jpg'); */
   background-image: url('./images/donate.png');
   background-repeat: no-repeat;
@@ -164,4 +167,13 @@ ul {
 
 #donate-btn:hover {
   background-color: lightgrey;
+}
+
+.logo {
+  height: 80px;
+}
+
+#logo img {
+  width: 80px;
+  height: auto;
 }

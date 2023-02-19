@@ -1,9 +1,13 @@
+import logo from "../images/logo.JPG";
+
 export default function About() {
     return(
         <div className="home-container">
         <nav>
         <a href="#" class="logo">
-          <h1> LOGO </h1>
+          <div id="logo">
+            <img src={logo}></img>
+          </div>
         </a>
 
         {/* Pages */}

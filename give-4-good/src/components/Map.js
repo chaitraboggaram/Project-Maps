@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/logo.JPG";
 import GoogleMapReact from 'google-map-react';
 
 export default function Map() {
@@ -15,7 +16,9 @@ export default function Map() {
         <div className="home-container">
         <nav>
         <a href="#" class="logo">
-          <h1> LOGO </h1>
+          <div id="logo">
+            <img src={logo}></img>
+          </div>
         </a>
 
         {/* Pages */}
