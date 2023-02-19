@@ -108,7 +108,7 @@ ul {
   width:100%; 
 }
 
-.about, .NGO {
+.about {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -127,6 +127,8 @@ ul {
   width: 100vw;
   height: calc(100vh - var(--nav-height));
 }
+
+/******* HOME *******/
 
 .home-section {
   position: absolute;
@@ -169,8 +171,55 @@ ul {
   background-color: lightgrey;
 }
 
+.home-section h1 {
+  font-size: 100px;
+  text-shadow: 5px 5px black;
+  color: white;
+}
+
+/******* NGO *******/
+.NGO {
+  text-align: center;
+}
+
+.NGO-title {
+  padding: 20px;
+}
+
+.NGO-title h1 {
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  max-width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  padding: 40px;
+}
+
+#ngo-logo {
+  height: 100px;
+}
+
+.ngo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* border: 1px solid pink; */
+}
+
 .logo {
-  height: 80px;
+  height: 100px;
 }
 
 #logo img {
