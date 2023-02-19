@@ -1,17 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-
-    // // var host = window.location.reload();
-
-    // function home() {
-    //   window.location.replace(window.location.reload() + "/");
-    // }
-    // function about() {
-    //   window.location.replace(window.location.reload() + "/about");
-    // }
 
     return(
         <div className="home-container">
@@ -23,18 +12,16 @@ export default function Home() {
         {/* Pages */}
           <ul>
           <li class="nav-item">
-            {/* <a href="#home" class="nav-link" id="nav-link" target="content">Home</a> */}
-            <a href="" onclick="home();" class="nav-link" id="nav-link">Home</a>
+          <button onClick={event => window.location.href='/'} class="nav-link">Home</button>
           </li>
           <li class="nav-item">
-            <button onclick="about();">About</button>
-            {/* <a href="http://localhost:3000/about" onclick="about();" class="nav-link" id="nav-link">About</a> */}
+            <button onClick={event => window.location.href='/about'} class="nav-link">About</button>
           </li>
           <li class="nav-item">
-            <a href="#map" class="nav-link" id="nav-link">Map</a>
+            <button onClick={event => window.location.href='/map'} class="nav-link">Map</button>
           </li>
           <li class="nav-item">
-            <a href="#ngo" class="nav-link" id="nav-link">NGO</a>
+            <button onClick={event => window.location.href='/ngo'} class="nav-link">NGO</button>
           </li>
         </ul>
       </nav>

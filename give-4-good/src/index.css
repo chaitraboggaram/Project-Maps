@@ -47,12 +47,14 @@ body {
     list-style-type: none;
   }
   
-  a {
+  a, button {
     text-decoration: none;
     color: var(--primary-color);
+    background: transparent;
+    border: none;
   }
   
-  a:hover {
+  a:hover, button:hover {
     color: var(--secondary-color);
   } 
   
