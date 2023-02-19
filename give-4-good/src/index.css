@@ -121,7 +121,7 @@ ul {
 .map-section {
   position: absolute;
   right: 0; bottom: 0; left: 0;
-  border: 15px solid orange;
+  border: 15px solid white;
   width: 100vw;
   height: calc(100vh - var(--nav-height));
 }
@@ -164,8 +164,4 @@ ul {
 
 #donate-btn:hover {
   background-color: lightgrey;
-}
-
-.logo {
-  background-image: url('./images/logo.JPG');
 }

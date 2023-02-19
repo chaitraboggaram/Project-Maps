@@ -6,8 +6,8 @@ export default function Home() {
         <div className="home-container">
         <nav>
         <a href="#" class="logo">
-          <div className="logo"></div>
-          {/* <h1> LOGO </h1> */}
+          {/* <div className="logo"></div> */}
+          <h1> LOGO </h1>
         </a>
 
         {/* Pages */}
