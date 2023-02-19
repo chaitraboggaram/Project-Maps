@@ -29,7 +29,7 @@ export default function NGO() {
             <button onClick={event => window.location.href='/map'} class="nav-link">Map</button>
           </li>
           <li class="nav-item">
-            <button onClick={event => window.location.href='/ngo'} class="nav-link">NGO</button>
+            <button onClick={event => window.location.href='/ngo'} class="nav-link"><u> NGO </u></button>
           </li>
         </ul>
       </nav>

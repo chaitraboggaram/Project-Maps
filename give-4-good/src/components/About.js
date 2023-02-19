@@ -16,7 +16,7 @@ export default function About() {
           <button onClick={event => window.location.href='/'} class="nav-link">Home</button>
           </li>
           <li class="nav-item">
-            <button onClick={event => window.location.href='/about'} class="nav-link">About</button>
+            <button onClick={event => window.location.href='/about'} class="nav-link"><u> About </u></button>
           </li>
           <li class="nav-item">
             <button onClick={event => window.location.href='/map'} class="nav-link">Map</button>
