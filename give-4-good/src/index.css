@@ -191,8 +191,8 @@ ul {
 
 
 .img_class{
-  margin-left: 65px;
-  margin-right: 65px;
+  /* margin-left: 5px;
+  margin-right: 65px; */
   /* position: absolute; */
   /* top: 100px;
   left: 40; */
@@ -201,13 +201,13 @@ ul {
 
 .img_class img{
   position: absolute;
-  margin-left: 195px;
-  margin-right: 105px;
+  margin-left: -150px;
+  margin-right: 300px;
   margin-top: -125px;
-  width: 550px;
-  height:500px;
+  /* width: 750px; */
+  height:600px;
   border-radius: 40px;
-  top: 140px;
+  top: 80px;
 }
 
 .donate {

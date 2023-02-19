@@ -49,9 +49,7 @@ export default function About() {
               <div className="about_blurb"> <h4> Helping bridging the gap between those in need and the organizations that are dedicated to helping them</h4></div>
             </div>
 
-            <div className="about-p">
-              <p> Welcome to Give for Good, where we strive to connect homeless individuals with NGOs that can provide them with essential help and food. Our goal is to make a difference in the lives of those who are struggling by facilitating access to the resources they need to survive. Through our platform, homeless individuals can find NGOs that provide shelter, food, and other forms of support. </p>
-            </div>
+           
 
             <div className="img_class">
               <img src={aboutImg} alt="image"/>
