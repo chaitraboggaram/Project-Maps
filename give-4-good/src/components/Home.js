@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/logo.JPG";
 
 export default function Home() {
 
@@ -6,8 +7,9 @@ export default function Home() {
         <div className="home-container">
         <nav>
         <a href="#" class="logo">
-          <div className="logo"></div>
-          {/* <h1> LOGO </h1> */}
+          <div id="logo">
+            <img src={logo}></img>
+          </div>
         </a>
 
         {/* Pages */}
