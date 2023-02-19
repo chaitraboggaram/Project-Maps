@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import {Button} from 'react-bootstrap';
-import React from 'react';
 import GoogleLogin from 'react-google-login';
 
 function clickButton() {
-    function App() {
         const responseGoogle = (response) => {
             console.log(response);
             // You can make an API call to your server with the response.tokenId to verify the user's identity.
@@ -24,11 +22,6 @@ function clickButton() {
         </div>
         );
     }
-
-export default App;
-
-    alert('You clicked me!');
-  }
   
 export default function Login() {
 
