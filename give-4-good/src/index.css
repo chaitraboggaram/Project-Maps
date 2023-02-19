@@ -121,5 +121,26 @@ body {
     width: 100vw;
     height: calc(100vh - var(--nav-height));
   }
-  
+
+  .login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-btn{
+    border-color: none;
+    border: none;
+    color:#f4f5f6;
+    background-color:#5E6FE2;
+    font-family: "Helvetica Neue";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 25px;
+    width: 100px;
+    height:30px;
+    border-radius: 4px;
+  }
+
   
