@@ -28,6 +28,7 @@ export default function Map() {
       <section class="map">
             <div class="map-section">
             </div>
+            
         </section>
     </div>
     );

@@ -26,11 +26,13 @@ export default function Home() {
         </ul>
       </nav>
 
-      <section class="about">
-            <div class="about-section">
-            <h1>Home</h1>
-            </div>
-        </section>
+      <section class="home">
+        <div class="home-section">
+          <div class="donate">
+            <button id="donate-btn" onClick={event => window.location.href='/login'}>Help Now</button>
+          </div>
+        </div>
+      </section>
     </div>
     );
 }
