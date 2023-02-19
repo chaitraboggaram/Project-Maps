@@ -226,3 +226,9 @@ td {
   width: 80px;
   height: auto;
 }
+
+/* MAPS */
+#map {
+  height: 400px; 
+  width: 90%;
+}
