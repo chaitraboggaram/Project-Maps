@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Map() {
     return(
         <div className="home-container">
         <nav>
@@ -27,9 +26,8 @@ export default function Home() {
         </ul>
       </nav>
 
-      <section class="about">
-            <div class="about-section">
-            <h1>Home</h1>
+      <section class="map">
+            <div class="map-section">
             </div>
         </section>
     </div>

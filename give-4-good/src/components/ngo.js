@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function NGO() {
     return(
         <div className="home-container">
         <nav>
@@ -27,9 +26,9 @@ export default function Home() {
         </ul>
       </nav>
 
-      <section class="about">
-            <div class="about-section">
-            <h1>Home</h1>
+      <section class="NGO">
+            <div class="NGO-section">
+            <h1>NGO</h1>
             </div>
         </section>
     </div>
