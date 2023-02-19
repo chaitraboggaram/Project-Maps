@@ -19,7 +19,7 @@ client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
-    redirect_uri="http://127.0.0.1:3000/callback"
+    redirect_uri="http://127.0.0.1:5000/callback"
 )
 
 
@@ -59,7 +59,7 @@ def callback():
 
     session["google_id"] = id_info.get("sub")
     session["name"] = id_info.get("name")
-    return redirect("/protected_area")
+    return redirect("/maps")
 
 
 @app.route("/logout")
@@ -72,11 +72,12 @@ def logout():
 def index():
     return render_template('home.html')
 
-@app.route("/protected_area")
+@app.route("/maps")
 @login_is_required
-def protected_area():
-    return f"Hello {session['name']}! <br/> <a href='/logout'><button>Logout</button></a>"
+def maps():
+    # return f"Hello {session['name']}! <br/> <a href='/logout'><button>Logout</button></a>"
+    return redirect("/maps")
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=3000, debug=True)
+    app.run(host='127.0.0.1', port=5000, debug=True)

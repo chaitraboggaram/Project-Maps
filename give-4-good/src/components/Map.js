@@ -40,14 +40,14 @@ export default function Map() {
 
       <section class="map">
         <div class="map-section">
-        <div style={{ height: '100vh', width: '100%' }}>
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: "" }}
-            defaultCenter={defaultProps.center}
-            defaultZoom={defaultProps.zoom}
-          >
-          </GoogleMapReact>
-        </div>
+          <div style={{ height: '100vh', width: '100%' }}>
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: "" }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}
+            >
+            </GoogleMapReact>
+          </div>
         </div>
       </section>
     </div>

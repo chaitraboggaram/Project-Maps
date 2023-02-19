@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="give-4-good/src/index.css">
 
         <style>
             #map {
@@ -12,6 +13,31 @@
         </style>
     </head>
     <body>
+        <nav>
+            <!-- Logo -->
+            <a href="#" class="logo">
+              <div id="logo">
+                <img src="give-4-good/src/images/logo.JPG"></img>
+              </div>
+            </a>
+    
+            <!-- Navbar -->
+            <ul>
+              <li class="nav-item">
+                <button onClick="Home()" class="nav-link">Home</button>
+              </li>
+              <li class="nav-item">
+                <button onClick="About()" class="nav-link">About</button>
+              </li>
+              <li class="nav-item">
+                <button onClick="Map()" class="nav-link">Map</button>
+              </li>
+              <li class="nav-item">
+                <button onClick="Ngo()" class="nav-link">NGO</button>
+              </li>
+            </ul>
+        </nav>
+
         <div class="row">
             <div id="map"></div>
             <script>
@@ -115,6 +141,21 @@
                     //     let marker = new google.maps.Marker({position: random_json, map: map,  
                     //     });
                     // }
+                function Home() {
+                    window.location.href = "http://localhost:3000/";
+                }
+
+                function About() {
+                    window.location.href = "http://localhost:3000/about";
+                }
+
+                function Map() {
+                    window.location.href = "";
+                }
+
+                function Ngo() {
+                    window.location.href = "http://localhost:3000/ngo";
+                }
             </script>
             <script async
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ0BaHgPmtPiIYxqldB3DK-t8jl9Brq7M&callback=initMap">
