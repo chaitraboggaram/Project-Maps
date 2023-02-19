@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		/* Basic page styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		.container {
+			max-width: 400px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			margin: 0 0 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="text"], input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		button {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form>
+			<label>Username</label>
+			<input type="text" id="username" name="username" required>
+			<label>Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit" onclick="login()">Log in</button>
+		</form>
+	</div>
+	<script>
+		// Function to handle the login process
+		function login() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			// Send a request to the server to validate the credentials
+			// and redirect to the dashboard if successful
+			// or display an error message if not
+		}
+	</script>
+</body>
+</html>
