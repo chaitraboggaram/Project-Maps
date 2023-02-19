@@ -108,7 +108,7 @@ ul {
   width:100%; 
 }
 
-.about, .NGO {
+.about {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -128,6 +128,8 @@ ul {
   height: calc(100vh - var(--nav-height));
 }
 
+/******* HOME *******/
+
 .home-section {
   position: absolute;
   padding: 50px 0px 0px;
@@ -145,10 +147,73 @@ ul {
   vertical-align: middle;
 }
 
+.about{
+    position: absolute;
+    padding: -50px 0px 0px;
+    right: 0; bottom: 0; left: 0;
+    width: 100vw;
+    /* height: calc(100vh - var(--nav-height)); */
+    height: calc(100vh);
+    /* background-image: url('./images/helping-hand.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.about-section p{
+  text-align: left;
+  color:rgb(90, 88, 88);
+  margin-left: 65px;
+  margin-right:50px;
+  font-size: 15px;
+}
+
+
+.about_blurb{
+  font-size: 35px;
+  text-align: left;
+  color: rgb(62, 60, 60);
+  margin-left: 65px;
+  margin-right:65px;
+  padding-right: 60%;
+}
+
+.about-p{
+  text-align: left;
+  color:rgb(90, 88, 88);
+  margin-left: 30px;
+  margin-right:0px;
+  font-size: 15px;
+}
+
+
+.img_class{
+  /* margin-left: 5px;
+  margin-right: 65px; */
+  /* position: absolute; */
+  /* top: 100px;
+  left: 40; */
+
+}
+
+.img_class img{
+  position: absolute;
+  margin-left: -150px;
+  margin-right: 300px;
+  margin-top: -125px;
+  /* width: 750px; */
+  height:600px;
+  border-radius: 40px;
+  top: 80px;
+}
+
 .donate {
   /* border: 1px solid blue; */
   position: absolute;
-  padding: 300px 0px 0px;
+  padding: 400px 0px 0px;
   right: 0; bottom: 0; left: 0;
   width: 100vw;
   height: calc(100vh - var(--nav-height));
@@ -163,14 +228,63 @@ ul {
   color: black;
   padding: 20px;
   border: 2px solid black;
+  border-radius: 30px;
+
 }
 
 #donate-btn:hover {
   background-color: lightgrey;
 }
 
+.home-section h1 {
+  font-size: 100px;
+  text-shadow: 5px 5px black;
+  color: white;
+}
+
+/******* NGO *******/
+.NGO {
+  text-align: center;
+}
+
+.NGO-title {
+  padding: 20px;
+}
+
+.NGO-title h1 {
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  max-width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  padding: 40px;
+}
+
+#ngo-logo {
+  height: 100px;
+}
+
+.ngo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* border: 1px solid pink; */
+}
+
 .logo {
-  height: 80px;
+  height: 100px;
 }
 
 #logo img {
