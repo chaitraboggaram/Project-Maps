@@ -11,17 +11,16 @@ export default function Map() {
         {/* Pages */}
           <ul>
           <li class="nav-item">
-            {/* <a href="#home" class="nav-link" id="nav-link" target="content">Home</a> */}
-            <a href="#home" class="nav-link" id="nav-link">Home</a>
+          <button onClick={event => window.location.href='/'} class="nav-link">Home</button>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link" id="nav-link">About</a>
+            <button onClick={event => window.location.href='/about'} class="nav-link">About</button>
           </li>
           <li class="nav-item">
-            <a href="#map" class="nav-link" id="nav-link">Map</a>
+            <button onClick={event => window.location.href='/map'} class="nav-link">Map</button>
           </li>
           <li class="nav-item">
-            <a href="#ngo" class="nav-link" id="nav-link">NGO</a>
+            <button onClick={event => window.location.href='/ngo'} class="nav-link">NGO</button>
           </li>
         </ul>
       </nav>
@@ -29,6 +28,7 @@ export default function Map() {
       <section class="map">
             <div class="map-section">
             </div>
+            
         </section>
     </div>
     );

@@ -1,49 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-
-    // // var host = window.location.reload();
-
-    // function home() {
-    //   window.location.replace(window.location.reload() + "/");
-    // }
-    // function about() {
-    //   window.location.replace(window.location.reload() + "/about");
-    // }
 
     return(
         <div className="home-container">
         <nav>
         <a href="#" class="logo">
-          <h1> LOGO </h1>
+          <div className="logo"></div>
+          {/* <h1> LOGO </h1> */}
         </a>
 
         {/* Pages */}
           <ul>
           <li class="nav-item">
-            {/* <a href="#home" class="nav-link" id="nav-link" target="content">Home</a> */}
-            <a href="" onclick="home();" class="nav-link" id="nav-link">Home</a>
+          <button onClick={event => window.location.href='/'} class="nav-link">Home</button>
           </li>
           <li class="nav-item">
-            <button onclick="about();">About</button>
-            {/* <a href="http://localhost:3000/about" onclick="about();" class="nav-link" id="nav-link">About</a> */}
+            <button onClick={event => window.location.href='/about'} class="nav-link">About</button>
           </li>
           <li class="nav-item">
-            <a href="#map" class="nav-link" id="nav-link">Map</a>
+            <button onClick={event => window.location.href='/map'} class="nav-link">Map</button>
           </li>
           <li class="nav-item">
-            <a href="#ngo" class="nav-link" id="nav-link">NGO</a>
+            <button onClick={event => window.location.href='/ngo'} class="nav-link">NGO</button>
           </li>
         </ul>
       </nav>
 
-      <section class="about">
-            <div class="about-section">
-            <h1>Home</h1>
-            </div>
-        </section>
+      <section class="home">
+        <div class="home-section">
+          <div class="donate">
+            <button id="donate-btn" onClick={event => window.location.href='/login'}>Help Now</button>
+          </div>
+        </div>
+      </section>
     </div>
     );
 }

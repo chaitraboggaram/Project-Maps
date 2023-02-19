@@ -5,142 +5,167 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-  
-  /* CSS Variables */
-  :root {
-    --normal-font: 600;
-    --bold-font: 800;
-    --bolder-font: 1100;
-    --primary-color: black;
-    --secondary-color: grey;
-    --line-height: 1.7rem;
-    --transition: 0.4s ease-in;
-    --nav-height: 70px; 
-  }
-  
-  /* Smooth scroll effect */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Resets */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: var(--transition);
-  }
-  
-   body {
-    font-family: "Roboto", sans-serf;
-  }
-  
-  ul li {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-  
-  a:hover {
-    color: var(--secondary-color);
-  } 
-  
-  nav {
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    box-shadow: 2px 3px 2px #f1f1f1;
-  
-    /* make navbar sticky */
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .hamburger {
-    display: none;
-  }
-  
-  .logo {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-item {
-    margin-left: 2rem;
-  }
-  
-  .nav-link {
-    font-weight: var(--bold-font);
-  }
-  
-  .hero .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100%; 
-    width:100%; 
-  }
-  
-  .home, .about, .NGO {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    margin-left: -100px;
-    margin-top: -30px;
-    text-align: center;
-  }
-  
-  .map-section {
-    position: absolute;
-    right: 0; bottom: 0; left: 0;
-    border: 15px solid orange;
-    width: 100vw;
-    height: calc(100vh - var(--nav-height));
-  }
+}
 
-  .login-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
-  .login-btn{
-    border-color: none;
-    border: none;
-    color:#f4f5f6;
-    background-color:#5E6FE2;
-    font-family: "Helvetica Neue";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 25px;
-    width: 100px;
-    height:30px;
-    border-radius: 4px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-  
+/* CSS Variables */
+:root {
+  --normal-font: 600;
+  --bold-font: 800;
+  --bolder-font: 1100;
+  --primary-color: black;
+  --secondary-color: grey;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+  --nav-height: 70px; 
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+  body {
+  font-family: "Roboto", sans-serf;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a, button {
+  text-decoration: none;
+  color: var(--primary-color);
+  background: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+a:hover, button:hover {
+  color: var(--secondary-color);
+} 
+
+nav {
+  /* background: #fff; */
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  /* box-shadow: 2px 3px 2px #f1f1f1; */
+
+  /* make navbar sticky */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  font-weight: var(--bold-font);
+}
+
+.hero .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%; 
+  width:100%; 
+}
+
+.about, .NGO {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -100px;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.map-section {
+  position: absolute;
+  right: 0; bottom: 0; left: 0;
+  border: 15px solid orange;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+}
+
+.home-section {
+  position: absolute;
+  padding: 50px 0px 0px;
+  right: 0; bottom: 0; left: 0;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  /* background-image: url('./images/helping-hand.jpg'); */
+  background-image: url('./images/donate.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.donate {
+  /* border: 1px solid blue; */
+  position: absolute;
+  padding: 300px 0px 0px;
+  right: 0; bottom: 0; left: 0;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#donate-btn {
+  background: white;
+  color: black;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+#donate-btn:hover {
+  background-color: lightgrey;
+}
+
+.logo {
+  background-image: url('./images/logo.JPG');
+}
