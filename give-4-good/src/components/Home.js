@@ -28,12 +28,11 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-
       <section class="home">
         <div class="home-section">
           <div class="donate">
             <h1>Give For Good</h1>
-            <button id="donate-btn" onClick={event => window.location.href='/login'}>Help Now</button>
+            <button id="donate-btn" onClick={event => window.location.href='http://localhost:5000/'}>Help Now</button>
           </div>
         </div>
       </section>
