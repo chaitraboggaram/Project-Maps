@@ -32,7 +32,7 @@ export default function Home() {
       <section class="home">
         <div class="home-section">
           <div class="donate">
-            <button id="donate-btn" onClick={event => window.location.href='/login'}>Help Now</button>
+            <button id="donate-btn" onClick={event => window.location.href='http://localhost:5000/'}>Help Now</button>
           </div>
         </div>
       </section>
