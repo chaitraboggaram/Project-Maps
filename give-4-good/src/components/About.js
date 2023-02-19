@@ -9,7 +9,6 @@ export default function About() {
         {/* Pages */}
           <ul>
           <li class="nav-item">
-            {/* <a href="#home" class="nav-link" id="nav-link" target="content">Home</a> */}
             <a href="#home" class="nav-link" id="nav-link">Home</a>
           </li>
           <li class="nav-item">
