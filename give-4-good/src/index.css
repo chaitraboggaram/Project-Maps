@@ -165,3 +165,7 @@ ul {
 #donate-btn:hover {
   background-color: lightgrey;
 }
+
+.logo {
+  background-image: url('./images/logo.JPG');
+}
