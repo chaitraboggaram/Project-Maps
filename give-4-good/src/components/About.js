@@ -46,7 +46,7 @@ export default function About() {
         <section className="about">
             <div className="about-section">
               <p> A B O U T  &ensp; U S </p>
-              <div className="about_blurb"> <h4> Helping bridging the gap between those in need and the organizations that are dedicated to helping them</h4></div>
+              <div className="about_blurb"> <h4>We strive to connect the needy with NGOs that can provide them with food and basic necessities. We encourage you to explore our site and see what resources are available to you. </h4></div>
             </div>
 
            
