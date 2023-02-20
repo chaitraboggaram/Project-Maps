@@ -30,7 +30,7 @@ export default function Map() {
             <button onClick={event => window.location.href='/about'} class="nav-link">About</button>
           </li>
           <li class="nav-item">
-            <button onClick={event => window.location.href='/map'} class="nav-link">Map</button>
+            <button onClick={event => window.location.href='/map'} class="nav-link"><u> Map </u></button>
           </li>
           <li class="nav-item">
             <button onClick={event => window.location.href='/ngo'} class="nav-link">NGO</button>

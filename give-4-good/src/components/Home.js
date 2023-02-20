@@ -15,7 +15,7 @@ export default function Home() {
         {/* Pages */}
           <ul>
           <li class="nav-item">
-          <button onClick={event => window.location.href='/'} class="nav-link">Home</button>
+          <button onClick={event => window.location.href='/'} class="nav-link"> <u>Home</u></button>
           </li>
           <li class="nav-item">
             <button onClick={event => window.location.href='/about'} class="nav-link">About</button>
