@@ -1,16 +1,24 @@
+from flask import Flask, request, jsonify, make_response, session, redirect, abort
+# from flask_mysqldb import MySQL
+from flask_cors import CORS
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 import os
-import pathlib
-import requests
-from flask import Flask, session, abort, redirect, request
-from flask import Flask, render_template, url_for
-from google.oauth2 import id_token
 from google_auth_oauthlib.flow import Flow
 from pip._vendor import cachecontrol
 import google.auth.transport.requests
+from google.oauth2 import id_token
+import requests
+import pathlib
 
-app = Flask("Google Login App")
-app.secret_key = "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" # make sure this matches with that's in client_secret.json
 
+app = Flask(__name__, template_folder='../templates')
+CORS(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Tssql1903@127.0.0.1:3306/hack4humanity'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+app.config["DEBUG"] = True
+
+app.secret_key = "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"
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1" # to allow Http traffic for local dev
 
 GOOGLE_CLIENT_ID = "107744252235-js85jfkqmaifre1bdkap18cn86er7kre.apps.googleusercontent.com"
@@ -19,8 +27,12 @@ client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
-    redirect_uri="http://localhost:5000/callback"
+    redirect_uri="http://127.0.0.1:5000/callback"
 )
+
+
+db = SQLAlchemy(app)
+migrate = Migrate(app, db, compare_type=True)
 
 
 def login_is_required(function):
@@ -30,7 +42,6 @@ def login_is_required(function):
         else:
             return function()
     return wrapper
-
 
 @app.route("/")
 def index():
@@ -59,7 +70,7 @@ def callback():
 
     session["google_id"] = id_info.get("sub")
     session["name"] = id_info.get("name")
-    return render_template("/map.html")
+    return redirect("/protected_area")
 
 
 @app.route("/logout")
@@ -67,13 +78,15 @@ def logout():
     session.clear()
     return redirect("/")
 
+@app.route("/protected_area")
+@login_is_required
+def protected_area():
+    return redirect('http://127.0.0.1:5000/get-user')
 
-@app.route("/map")
-# # @login_is_required
-def map():
-    return redirect('http://127.0.0.1:5000/map.html')
-    # return f"Hello {session['name']}! <br/> <a href='/logout'><button>Logout</button></a>"
+from app import person_controller
 
 
-if __name__ == "__main__":
-    app.run(host='localhost', port=5000, debug=True)
+
+
+
+

@@ -21,7 +21,7 @@ export default function Home() {
             <button onClick={event => window.location.href='/about'} class="nav-link">About</button>
           </li>
           <li class="nav-item">
-            <button onClick={event => window.location.href='/map'} class="nav-link">Map</button>
+            <button onClick={event => window.location.href='http://127.0.0.1:5000/map.html'} class="nav-link">Map</button>
           </li>
           <li class="nav-item">
             <button onClick={event => window.location.href='/ngo'} class="nav-link">NGO</button>
